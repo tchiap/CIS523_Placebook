@@ -25,10 +25,12 @@ data class Bookmark(
     var category: String = ""
 ) {
 
+  // 3
   companion object {
 
     fun generateImageFilename(id: Long): String {
 
+      // 4
       return "bookmark$id.png"
 
     }
@@ -36,16 +38,21 @@ data class Bookmark(
   }
 
   fun setImage(image: Bitmap, context: Context) {
+
+    // 2 - page 348
     id?.let {
       ImageUtils.saveBitmapToFile(context, image,
           generateImageFilename(it))
     }
   }
 
+  // page 431
   fun deleteImage(context: Context) {
+
     id?.let {
       FileUtils.deleteFile(context, generateImageFilename(it))
     }
+
   }
 
 

@@ -49,9 +49,7 @@ class BookmarkDetailsActivity : AppCompatActivity(),
 
     photoFile?.let { photoFile ->
 
-      val photoUri = FileProvider.getUriForFile(this,
-          "com.raywenderlich.placebook.fileprovider",
-          photoFile)
+      val photoUri = FileProvider.getUriForFile(this, "com.raywenderlich.placebook.fileprovider", photoFile)
 
       val captureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
 
@@ -115,12 +113,15 @@ class BookmarkDetailsActivity : AppCompatActivity(),
 
   }
 
-  override fun onActivityResult(requestCode: Int, resultCode: Int,
-                                data: Intent?) {
+  override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
     super.onActivityResult(requestCode, resultCode, data)
 
+    // page 406
+
+    // 1
     if (resultCode == android.app.Activity.RESULT_OK) {
 
+      // 2
       when (requestCode) {
 
         REQUEST_CAPTURE_IMAGE -> {
@@ -131,6 +132,7 @@ class BookmarkDetailsActivity : AppCompatActivity(),
 
           revokeUriPermission(uri, Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
 
+          // 6
           val image = getImageWithPath(photoFile.absolutePath)
           image?.let { updateImage(it) }
         }
@@ -144,14 +146,17 @@ class BookmarkDetailsActivity : AppCompatActivity(),
     }
   }
 
+  // page 422
   private fun populateCategoryList() {
 
+    // 1
     val bookmarkView = bookmarkDetailsView ?: return
 
     val resourceId =
         bookmarkDetailsViewModel.getCategoryResourceId(
             bookmarkView.category)
 
+    // 3
     resourceId?.let { imageViewCategory.setImageResource(it) }
 
     val categories = bookmarkDetailsViewModel.getCategories()
@@ -160,6 +165,7 @@ class BookmarkDetailsActivity : AppCompatActivity(),
 
     adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
+    // 6
     spinnerCategory.adapter = adapter
 
     val placeCategory = bookmarkView.category
@@ -171,6 +177,8 @@ class BookmarkDetailsActivity : AppCompatActivity(),
 
         override fun onItemSelected(parent: AdapterView<*>, view: View,
                                     position: Int, id: Long) {
+
+
 
           val category = parent.getItemAtPosition(position) as String
 
@@ -189,13 +197,12 @@ class BookmarkDetailsActivity : AppCompatActivity(),
     }
   }
 
+
+  // page 409
   private fun getImageWithAuthority(uri: Uri): Bitmap? {
-    return ImageUtils.decodeUriStreamToSize(uri,
-        resources.getDimensionPixelSize(
-            R.dimen.default_image_width),
-        resources.getDimensionPixelSize(
-            R.dimen.default_image_height),
-        this)
+    return ImageUtils.decodeUriStreamToSize(uri, resources.getDimensionPixelSize(
+            R.dimen.default_image_width), resources.getDimensionPixelSize(
+            R.dimen.default_image_height), this)
   }
 
   private fun updateImage(image: Bitmap) {
@@ -204,6 +211,7 @@ class BookmarkDetailsActivity : AppCompatActivity(),
     bookmarkView.setImage(this, image)
   }
 
+  // page 398
   private fun replaceImage() {
     val newFragment = PhotoOptionDialogFragment.newInstance(this)
     newFragment?.show(supportFragmentManager, "photoOptionDialog")
@@ -218,11 +226,13 @@ class BookmarkDetailsActivity : AppCompatActivity(),
 
 
   private fun saveChanges() {
+
     val name = editTextName.text.toString()
     if (name.isEmpty()) {
       return
     }
 
+    // page 376
     bookmarkDetailsView?.let { bookmarkView ->
       bookmarkView.name = editTextName.text.toString()
       bookmarkView.notes = editTextNotes.text.toString()
@@ -247,14 +257,19 @@ class BookmarkDetailsActivity : AppCompatActivity(),
         .create().show()
   }
 
+
+
   private fun getIntentData() {
 
+    // page 371
+    // 1
     val bookmarkId = intent.getLongExtra(
         MapsActivity.Companion.EXTRA_BOOKMARK_ID, 0)
 
     bookmarkDetailsViewModel.getBookmark(bookmarkId)?.observe(
         this, Observer<BookmarkDetailsViewModel.BookmarkDetailsView> {
 
+      // 3
       it?.let {
         bookmarkDetailsView = it
         // Populate fields from bookmark
@@ -276,6 +291,7 @@ class BookmarkDetailsActivity : AppCompatActivity(),
     }
   }
 
+  // page 472
   private fun setupToolbar() {
     setSupportActionBar(toolbar)
   }
@@ -303,8 +319,12 @@ class BookmarkDetailsActivity : AppCompatActivity(),
 
   private fun sharePlace() {
 
+    // page 434
+
+    // 1
     val bookmarkView = bookmarkDetailsView ?: return
 
+    // 2
     var mapUrl = ""
 
     if (bookmarkView.placeId == null) {
@@ -322,14 +342,18 @@ class BookmarkDetailsActivity : AppCompatActivity(),
 
     }
 
+    // 5
     val sendIntent = Intent()
     sendIntent.action = Intent.ACTION_SEND
 
+    // 6
     sendIntent.putExtra(Intent.EXTRA_TEXT, "Check out ${bookmarkView.name} at:\n$mapUrl")
     sendIntent.putExtra(Intent.EXTRA_SUBJECT, "Sharing ${bookmarkView.name}")
 
+    // 7
     sendIntent.type = "text/plain"
 
+    // 8
     startActivity(sendIntent)
   }
 

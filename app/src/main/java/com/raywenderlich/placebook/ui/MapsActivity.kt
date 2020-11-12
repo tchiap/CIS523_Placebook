@@ -71,8 +71,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_maps)
 
-    val mapFragment = supportFragmentManager
-        .findFragmentById(R.id.map) as SupportMapFragment
+    val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
     mapFragment.getMapAsync(this)
 
     setupLocationClient()
@@ -94,19 +93,27 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
   override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
     super.onActivityResult(requestCode, resultCode, data)
 
+
+    // page 426
+    // 1
     when (requestCode) {
       AUTOCOMPLETE_REQUEST_CODE ->
 
+
+        // 2
         if (resultCode == Activity.RESULT_OK && data != null) {
 
           val place = Autocomplete.getPlaceFromIntent(data)
 
+
+          // 4
           val location = Location("")
           location.latitude = place.latLng?.latitude ?: 0.0
           location.longitude = place.latLng?.longitude ?: 0.0
           updateMapToLocation(location)
           showProgress()
 
+          // 5
           displayPoiGetPhotoStep(place)
         }
     }
@@ -119,6 +126,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
   private fun requestLocationPermissions() {
+
+    // page 274
     ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), REQUEST_LOCATION)
   }
 
@@ -132,6 +141,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
       displayPoi(it)
     }
 
+    // page 334
     map.setOnInfoWindowClickListener {
       handleInfoWindowClick(it)
     }
@@ -139,6 +149,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     fab.setOnClickListener {
       searchAtCurrentLocation()
     }
+
+    // page 429
     map.setOnMapLongClickListener { latLng ->
       newBookmark(latLng)
     }
@@ -152,6 +164,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
   private fun displayPoiGetPlaceStep(pointOfInterest: PointOfInterest) {
     val placeId = pointOfInterest.placeId
 
+    // page 417
     val placeFields = listOf(Place.Field.ID,
         Place.Field.NAME,
         Place.Field.PHONE_NUMBER,
@@ -195,6 +208,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
       return
     }
 
+    // page 298
 
     // 3
     val photoRequest = FetchPhotoRequest.builder(photoMetadata).setMaxWidth(resources.getDimensionPixelSize(R.dimen.default_image_width)).setMaxHeight(resources.getDimensionPixelSize(R.dimen.default_image_height)).build()
@@ -206,6 +220,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     }.addOnFailureListener { exception ->
 
+
+      // 6
       if (exception is ApiException) {
         val statusCode = exception.statusCode
         Log.e(TAG, "Place not found: " + exception.message + ", statusCode: " + statusCode)
@@ -416,11 +432,13 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
   }
 
 
-
+  // page 392
   fun moveToBookmark(bookmark: MapsViewModel.BookmarkView) {
 
+    // 1
     drawerLayout.closeDrawer(drawerView)
 
+    // 2
     val marker = markers[bookmark.id]
 
     marker?.showInfoWindow()
@@ -434,9 +452,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
   }
 
 
+  // PlaceAutocomplete search
 
   private fun searchAtCurrentLocation() {
 
+
+    // 1
     val placeFields = listOf(
         Place.Field.ID,
         Place.Field.NAME,
@@ -446,10 +467,15 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         Place.Field.ADDRESS,
         Place.Field.TYPES)
 
+
+    // 2
     val bounds = RectangularBounds.newInstance(map.projection.visibleRegion.latLngBounds)
 
+
+    // page 425
     try {
 
+      // 3
       val intent = Autocomplete.IntentBuilder(
           AutocompleteActivityMode.OVERLAY, placeFields)
           .setLocationBias(bounds)
@@ -464,7 +490,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
   }
 
 
-
+  // page 440
   private fun disableUserInteraction() {
     window.setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
         WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
@@ -477,10 +503,14 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
   }
 
   private fun hideProgress() {
+
+    // page 440
     progressBar.visibility = ProgressBar.GONE
     enableUserInteraction()
   }
 
+
+  // page 440
   private fun enableUserInteraction() {
     window.clearFlags(
         WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
@@ -502,7 +532,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
   companion object {
+
+    // page 366
     const val EXTRA_BOOKMARK_ID = "com.raywenderlich.placebook.EXTRA_BOOKMARK_ID"
+
     private const val REQUEST_LOCATION = 1
     private const val TAG = "MapsActivity"
     private const val AUTOCOMPLETE_REQUEST_CODE = 2

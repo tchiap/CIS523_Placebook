@@ -33,14 +33,19 @@ class BookmarkRepo(private val context: Context) {
     return bookmarkDao.loadBookmark(bookmarkId)
   }
 
+  // page 329
+
   fun addBookmark(bookmark: Bookmark): Long? {
+
     val newId = bookmarkDao.insertBookmark(bookmark)
     bookmark.id = newId
     return newId
+
   }
 
 
 
+  // page 366
 
   fun getLiveBookmark(bookmarkId: Long): LiveData<Bookmark> {
     val bookmark = bookmarkDao.loadLiveBookmark(bookmarkId)
