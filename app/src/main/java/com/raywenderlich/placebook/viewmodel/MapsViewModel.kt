@@ -1,14 +1,15 @@
 
 package com.raywenderlich.placebook.viewmodel
 
-import android.app.Application
-import android.content.Context
-import android.graphics.Bitmap
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations
 import com.google.android.gms.maps.model.LatLng
+import android.app.Application
+import android.content.Context
+import android.graphics.Bitmap
+
 import com.google.android.libraries.places.api.model.Place
 import com.raywenderlich.placebook.model.Bookmark
 import com.raywenderlich.placebook.repository.BookmarkRepo
@@ -18,11 +19,14 @@ class MapsViewModel(application: Application) : AndroidViewModel(application) {
 
   private val TAG = "MapsViewModel"
 
-  private var bookmarkRepo: BookmarkRepo = BookmarkRepo(
-      getApplication())
-  private var bookmarks: LiveData<List<BookmarkView>>?
-      = null
+  // 2 - page 330
+  private var bookmarkRepo: BookmarkRepo = BookmarkRepo(getApplication())
 
+
+
+  private var bookmarks: LiveData<List<BookmarkView>>? = null
+
+  // page 429
   fun addBookmark(latLng: LatLng) : Long? {
     val bookmark = bookmarkRepo.createBookmark()
     bookmark.name = "Untitled"
@@ -45,6 +49,7 @@ class MapsViewModel(application: Application) : AndroidViewModel(application) {
 
     val newId = bookmarkRepo.addBookmark(bookmark)
     image?.let { bookmark.setImage(it, getApplication()) }
+
     Log.i(TAG, "New bookmark $newId added to the database.")
   }
 
@@ -66,11 +71,14 @@ class MapsViewModel(application: Application) : AndroidViewModel(application) {
 
   private fun getPlaceCategory(place: Place): String {
 
+    // 1 - page 416
     var category = "Other"
     val placeTypes = place.types
 
     placeTypes?.let { placeTypes ->
       if (placeTypes.size > 0) {
+
+        // 3
         val placeType = placeTypes[0]
         category = bookmarkRepo.placeTypeToCategory(placeType)
       }
@@ -78,6 +86,8 @@ class MapsViewModel(application: Application) : AndroidViewModel(application) {
 
     return category
   }
+
+
 
   private fun bookmarkToBookmarkView(bookmark: Bookmark):
       MapsViewModel.BookmarkView {

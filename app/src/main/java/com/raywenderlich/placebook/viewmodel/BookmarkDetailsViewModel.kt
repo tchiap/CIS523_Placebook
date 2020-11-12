@@ -3,23 +3,27 @@ package com.raywenderlich.placebook.viewmodel
 
 import android.app.Application
 import android.content.Context
-import android.graphics.Bitmap
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations
 import com.raywenderlich.placebook.model.Bookmark
 import com.raywenderlich.placebook.repository.BookmarkRepo
 import com.raywenderlich.placebook.util.ImageUtils
+
+
+import android.graphics.Bitmap
+import androidx.lifecycle.AndroidViewModel
+
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-class BookmarkDetailsViewModel(application: Application) :
-    AndroidViewModel(application) {
 
-  private var bookmarkRepo: BookmarkRepo =
-      BookmarkRepo(getApplication())
+
+class BookmarkDetailsViewModel(application: Application) : AndroidViewModel(application) {
+
+  private var bookmarkRepo: BookmarkRepo = BookmarkRepo(getApplication())
   private var bookmarkDetailsView: LiveData<BookmarkDetailsView>? = null
 
+  // page 422
   fun getCategories(): List<String> {
     return bookmarkRepo.categories
   }
@@ -31,10 +35,18 @@ class BookmarkDetailsViewModel(application: Application) :
     return bookmarkDetailsView
   }
 
+
+  // page 375
+
   fun updateBookmark(bookmarkDetailsView: BookmarkDetailsView) {
 
+    // 1
     GlobalScope.launch {
+
+      // 2
       val bookmark = bookmarkViewToBookmark(bookmarkDetailsView)
+
+      // 3
       bookmark?.let { bookmarkRepo.updateBookmark(it) }
     }
   }
@@ -54,11 +66,13 @@ class BookmarkDetailsViewModel(application: Application) :
     return bookmarkRepo.getCategoryResourceId(category)
   }
 
-  private fun bookmarkViewToBookmark(bookmarkDetailsView: BookmarkDetailsView):
-      Bookmark? {
+
+  // page 374
+  private fun bookmarkViewToBookmark(bookmarkDetailsView: BookmarkDetailsView): Bookmark? {
     val bookmark = bookmarkDetailsView.id?.let {
       bookmarkRepo.getBookmark(it)
     }
+
     if (bookmark != null) {
       bookmark.id = bookmarkDetailsView.id
       bookmark.name = bookmarkDetailsView.name
@@ -70,8 +84,12 @@ class BookmarkDetailsViewModel(application: Application) :
     return bookmark
   }
 
+
+
   private fun mapBookmarkToBookmarkView(bookmarkId: Long) {
+
     val bookmark = bookmarkRepo.getLiveBookmark(bookmarkId)
+
     bookmarkDetailsView = Transformations.map(bookmark) { repoBookmark ->
       repoBookmark?.let {
         bookmarkToBookmarkView(repoBookmark)
@@ -79,6 +97,8 @@ class BookmarkDetailsViewModel(application: Application) :
     }
   }
 
+
+  // page 417
   private fun bookmarkToBookmarkView(bookmark: Bookmark): BookmarkDetailsView {
     return BookmarkDetailsView(
         bookmark.id,
@@ -104,12 +124,14 @@ class BookmarkDetailsViewModel(application: Application) :
                                  var placeId: String? = null) {
     fun getImage(context: Context): Bitmap? {
       id?.let {
+
         return ImageUtils.loadBitmapFromFile(context,
             Bookmark.generateImageFilename(it))
       }
       return null
     }
 
+    // page 405
     fun setImage(context: Context, image: Bitmap) {
       id?.let {
         ImageUtils.saveBitmapToFile(context, image,
