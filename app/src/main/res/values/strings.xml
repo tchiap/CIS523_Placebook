@@ -1,0 +1,20 @@
+<resources>
+  <string name="app_name">PlaceBook</string>
+  <string name="title_activity_maps">PlaceBook</string>
+  <string name="bookmark_image">Bookmark image</string>
+  <string name="open_drawer">Open Drawer</string>
+  <string name="close_drawer">Close Drawer</string>
+  <string name="save">Save</string>
+  <string name="delete">Delete</string>
+    <string name="placebook">PlaceBook</string>
+  <string name="detail_line">CIS 645</string>
+    <string name="textViewName">Name</string>
+  <string name="hintName">Name</string>
+  <string name="textViewCategory">Category</string>
+  <string name="textViewNotes">Notes</string>
+  <string name="hintEnterNotes">Enter notes</string>
+  <string name="textViewPhone">Phone</string>
+  <string name="hintPhoneNumber">Phone number</string>
+  <string name="hintAddress">Address</string>
+  <string name="textViewAddress">Address</string>
+</resources>

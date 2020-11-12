@@ -1,0 +1,12 @@
+com/raywenderlich/placebook/db/BookmarkDao_Impl.java
+ com.raywenderlich.placebook.db.BookmarkDao_Impl
+ com.raywenderlich.placebook.db.BookmarkDao_Impl$1
+ com.raywenderlich.placebook.db.BookmarkDao_Impl$2
+ com.raywenderlich.placebook.db.BookmarkDao_Impl$3
+ com.raywenderlich.placebook.db.BookmarkDao_Impl$4
+ com.raywenderlich.placebook.db.BookmarkDao_Impl$5
+com/raywenderlich/placebook/db/PlaceBookDatabase_Impl.java
+ com.raywenderlich.placebook.db.PlaceBookDatabase_Impl
+ com.raywenderlich.placebook.db.PlaceBookDatabase_Impl$1
+com/raywenderlich/placebook/BuildConfig.java
+ com.raywenderlich.placebook.BuildConfig
