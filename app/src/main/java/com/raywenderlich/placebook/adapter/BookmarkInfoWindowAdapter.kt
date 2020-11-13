@@ -1,5 +1,4 @@
 
-
 package com.raywenderlich.placebook.adapter
 
 import android.app.Activity
@@ -21,7 +20,6 @@ class BookmarkInfoWindowAdapter(val context: Activity) : GoogleMap.InfoWindowAda
         contents = context.layoutInflater.inflate(
                 R.layout.content_bookmark_info, null)
     }
-
 
 
     override fun getInfoContents(marker: Marker): View? {

@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-52:12
+ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-59:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\1d90cd8f4900107f057abb787f3d5130\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\dae4893c6da7d3f07cc6aee22e239a2b\jetified-places-2.2.0\AndroidManifest.xml:2:1-23:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\a0df8aa46d15bef6d531d21ede0e97e2\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\66f84675312383e1467191a9317e581a\jetified-activity-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\dd737f1cfebb28cb291ab8bad2c1aae2\jetified-core-ktx-1.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\164db0e8100c0560953c5b2016d116db\jetified-play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\c0351a1d9034bf251cf033c0ee0c969a\jetified-play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\66f84675312383e1467191a9317e581a\jetified-activity-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\dd737f1cfebb28cb291ab8bad2c1aae2\jetified-core-ktx-1.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\fcb9e7aa364f725406195145c9172737\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\110b53c44c05ac1d5f55dd683fd11766\room-runtime-2.2.5\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\6663aca644434e7fb3ce090058a4a257\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
@@ -24,19 +24,19 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\tchiapet\.g
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\17de1d49271e5a3dbca270f3642625b4\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\3812e7a40e8f4baf632e5f61e2cfdb93\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\b64750d96a60914908b1220e2e80e730\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\eaa4184ef95fb51bf07a251cf4549871\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\8f9fb315de656c3318595e7f70e6a9f6\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\e645a93e4ecc83c75e07d37522a5f797\transition-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\55abb7e948258522d575f8dc4ee0df62\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\4f2ba545a4331b28b7adb2460751a1ff\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\06a8a69ca5fc888f2b351b0a49a6a73a\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\a261a5df3a83ea7fee0f7019efc6f502\jetified-transport-runtime-2.1.0\AndroidManifest.xml:15:1-41:12
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\c77ea19382f0626800c2b99d7454edc8\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\9ab9beff53653ff1e9fe334b4d5f1395\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\7664f82643b3edd3b22586071f92de72\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\8a26777318ad3531fbb6dbfaf1355b47\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\3cbc7404a6cb10db2956366906999e11\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\6c0044a99f91be826ffee75cdd447424\core-1.2.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\eaa4184ef95fb51bf07a251cf4549871\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\06a8a69ca5fc888f2b351b0a49a6a73a\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:15:1-38:12
-MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\a261a5df3a83ea7fee0f7019efc6f502\jetified-transport-runtime-2.1.0\AndroidManifest.xml:15:1-41:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\85b801711ff24637d41c18f80b342639\jetified-lifecycle-viewmodel-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\8d4bd317e88d19452ef71d90c2ac93e5\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\e867451a1a67fec38e42347d18f38422\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
@@ -52,20 +52,20 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\tchiapet\.gradle\cac
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\29d820506409cfa38b75a3337969ce53\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\c23d2dc72fad7ad46bdcf3b077d83198\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\9f5d0d7fc74b1c1719a5d02632952423\jetified-transport-api-2.1.0\AndroidManifest.xml:15:1-22:12
-INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-59:12
 	package
 		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:11-48
 		INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-52:12
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-59:12
 		INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-52:12
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:2:1-59:12
 		INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:3:11-69
@@ -80,7 +80,7 @@ ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\Androi
 	android:name
 		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:7:20-75
 application
-ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:9:3-50:17
+ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:9:3-57:17
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\1d90cd8f4900107f057abb787f3d5130\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\1d90cd8f4900107f057abb787f3d5130\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\dae4893c6da7d3f07cc6aee22e239a2b\jetified-places-2.2.0\AndroidManifest.xml:13:5-21:19
@@ -101,12 +101,12 @@ MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\tchi
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\bc13f0acd75a988cccadd5bbe939939f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\dfe16d5c82cb8587f4da922d6c2714b5\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\dfe16d5c82cb8587f4da922d6c2714b5\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.core:core:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\6c0044a99f91be826ffee75cdd447424\core-1.2.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\6c0044a99f91be826ffee75cdd447424\core-1.2.0\AndroidManifest.xml:24:5-89
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\06a8a69ca5fc888f2b351b0a49a6a73a\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\06a8a69ca5fc888f2b351b0a49a6a73a\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\a261a5df3a83ea7fee0f7019efc6f502\jetified-transport-runtime-2.1.0\AndroidManifest.xml:25:5-39:19
 MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\a261a5df3a83ea7fee0f7019efc6f502\jetified-transport-runtime-2.1.0\AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.core:core:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\6c0044a99f91be826ffee75cdd447424\core-1.2.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\6c0044a99f91be826ffee75cdd447424\core-1.2.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\cacf7ff0fa88ad6204736ae1f1598ba0\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\cacf7ff0fa88ad6204736ae1f1598ba0\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\96c79aa66dd9a4b0b958117e98c53b3b\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
@@ -152,31 +152,31 @@ ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\Androi
 	android:name
 		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:27:19-66
 activity#com.raywenderlich.placebook.ui.BookmarkDetailsActivity
-ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:32:5-37:16
+ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:34:5-39:16
 	android:label
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:34:9-33
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:36:9-33
 	android:windowSoftInputMode
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:36:9-50
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:38:9-50
 	android:theme
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:35:9-52
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:37:9-52
 	android:name
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:33:9-78
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:35:9-78
 provider#androidx.core.content.FileProvider
-ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:40:5-48:16
+ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:45:5-55:16
 	android:grantUriPermissions
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:44:9-43
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:49:9-43
 	android:authorities
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:42:9-71
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:47:9-71
 	android:exported
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:43:9-33
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:48:9-33
 	android:name
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:41:9-58
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:46:9-58
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:45:7-47:47
+ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:52:7-54:47
 	android:resource
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:47:11-45
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:54:11-45
 	android:name
-		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:46:11-61
+		ADDED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml:53:11-61
 uses-sdk
 INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\tchiapet\AndroidStudioProjects\PlaceBook\app\src\main\AndroidManifest.xml
@@ -187,14 +187,14 @@ MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\tchiapet
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\dae4893c6da7d3f07cc6aee22e239a2b\jetified-places-2.2.0\AndroidManifest.xml:7:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\a0df8aa46d15bef6d531d21ede0e97e2\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\a0df8aa46d15bef6d531d21ede0e97e2\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\66f84675312383e1467191a9317e581a\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\66f84675312383e1467191a9317e581a\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\dd737f1cfebb28cb291ab8bad2c1aae2\jetified-core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\dd737f1cfebb28cb291ab8bad2c1aae2\jetified-core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\164db0e8100c0560953c5b2016d116db\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\164db0e8100c0560953c5b2016d116db\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\c0351a1d9034bf251cf033c0ee0c969a\jetified-play-services-location-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\c0351a1d9034bf251cf033c0ee0c969a\jetified-play-services-location-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\66f84675312383e1467191a9317e581a\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\66f84675312383e1467191a9317e581a\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\dd737f1cfebb28cb291ab8bad2c1aae2\jetified-core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\dd737f1cfebb28cb291ab8bad2c1aae2\jetified-core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\fcb9e7aa364f725406195145c9172737\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\fcb9e7aa364f725406195145c9172737\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\110b53c44c05ac1d5f55dd683fd11766\room-runtime-2.2.5\AndroidManifest.xml:20:5-22:41
@@ -221,6 +221,8 @@ MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\tchiapet\.gr
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\3812e7a40e8f4baf632e5f61e2cfdb93\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\b64750d96a60914908b1220e2e80e730\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\b64750d96a60914908b1220e2e80e730\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\eaa4184ef95fb51bf07a251cf4549871\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\eaa4184ef95fb51bf07a251cf4549871\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\8f9fb315de656c3318595e7f70e6a9f6\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\8f9fb315de656c3318595e7f70e6a9f6\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\e645a93e4ecc83c75e07d37522a5f797\transition-1.2.0\AndroidManifest.xml:20:5-22:41
@@ -229,6 +231,10 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\tch
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\55abb7e948258522d575f8dc4ee0df62\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\4f2ba545a4331b28b7adb2460751a1ff\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\4f2ba545a4331b28b7adb2460751a1ff\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\06a8a69ca5fc888f2b351b0a49a6a73a\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\06a8a69ca5fc888f2b351b0a49a6a73a\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\a261a5df3a83ea7fee0f7019efc6f502\jetified-transport-runtime-2.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\a261a5df3a83ea7fee0f7019efc6f502\jetified-transport-runtime-2.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\c77ea19382f0626800c2b99d7454edc8\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\c77ea19382f0626800c2b99d7454edc8\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\9ab9beff53653ff1e9fe334b4d5f1395\viewpager-1.0.0\AndroidManifest.xml:20:5-44
@@ -241,12 +247,6 @@ MERGED from [androidx.customview:customview:1.0.0] C:\Users\tchiapet\.gradle\cac
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\3cbc7404a6cb10db2956366906999e11\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\6c0044a99f91be826ffee75cdd447424\core-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\6c0044a99f91be826ffee75cdd447424\core-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\eaa4184ef95fb51bf07a251cf4549871\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\eaa4184ef95fb51bf07a251cf4549871\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\06a8a69ca5fc888f2b351b0a49a6a73a\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\06a8a69ca5fc888f2b351b0a49a6a73a\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\a261a5df3a83ea7fee0f7019efc6f502\jetified-transport-runtime-2.1.0\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\a261a5df3a83ea7fee0f7019efc6f502\jetified-transport-runtime-2.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\85b801711ff24637d41c18f80b342639\jetified-lifecycle-viewmodel-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\85b801711ff24637d41c18f80b342639\jetified-lifecycle-viewmodel-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\tchiapet\.gradle\caches\transforms-2\files-2.1\8d4bd317e88d19452ef71d90c2ac93e5\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41

@@ -19,7 +19,6 @@ class PhotoOptionDialogFragment : DialogFragment() {
 
   private lateinit var listener: PhotoOptionDialogListener
 
-
   // page 394
   override fun onCreateDialog(savedInstanceState: Bundle?):
       Dialog {

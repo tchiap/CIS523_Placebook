@@ -6,9 +6,9 @@
   <string name="close_drawer">Close Drawer</string>
   <string name="save">Save</string>
   <string name="delete">Delete</string>
-    <string name="placebook">PlaceBook</string>
+  <string name="placebook">PlaceBook</string>
   <string name="detail_line">CIS 645</string>
-    <string name="textViewName">Name</string>
+  <string name="textViewName">Name</string>
   <string name="hintName">Name</string>
   <string name="textViewCategory">Category</string>
   <string name="textViewNotes">Notes</string>

@@ -110,8 +110,8 @@
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
     <color name="colorAccent">#673AB7</color>
-    <color name="colorPrimary">#3748AC</color>
-    <color name="colorPrimaryDark">#2A3784</color>
+    <color name="colorPrimary">#3D52C8</color>
+    <color name="colorPrimaryDark">#2E3E9A</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -3009,10 +3009,11 @@
     <style name="BookmarkEditText">
     <item name="android:layout_width">0dp</item>
     <item name="android:layout_weight">0.8</item>
-    <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_marginEnd">8dp</item>
     <item name="android:layout_marginRight">8dp</item>
     <item name="android:layout_marginStart">8dp</item>
+    <item name="android:layout_height">wrap_content</item>
+
     <item name="android:layout_marginLeft">8dp</item>
     <item name="android:ems">10</item>
   </style>

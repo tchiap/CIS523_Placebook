@@ -32,6 +32,7 @@ class MapsViewModel(application: Application) : AndroidViewModel(application) {
     bookmark.name = "Untitled"
     bookmark.longitude = latLng.longitude
     bookmark.latitude = latLng.latitude
+
     bookmark.category = "Other"
     return bookmarkRepo.addBookmark(bookmark)
   }
@@ -104,6 +105,7 @@ class MapsViewModel(application: Application) : AndroidViewModel(application) {
                           val name: String = "",
                           val phone: String = "",
                           val categoryResourceId: Int? = null) {
+
     fun getImage(context: Context): Bitmap? {
       id?.let {
         return ImageUtils.loadBitmapFromFile(context,

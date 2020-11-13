@@ -14,6 +14,7 @@ import com.raywenderlich.placebook.viewmodel.MapsViewModel.BookmarkView
 import kotlinx.android.synthetic.main.bookmark_item.view.*
 
 class BookmarkListAdapter(
+
     private var bookmarkData: List<BookmarkView>?,
     private val mapsActivity: MapsActivity) :
     RecyclerView.Adapter<BookmarkListAdapter.ViewHolder>() {
@@ -33,9 +34,7 @@ class BookmarkListAdapter(
 
   }
 
-  override fun onCreateViewHolder(
-          parent: ViewGroup,
-          viewType: Int): BookmarkListAdapter.ViewHolder {
+  override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookmarkListAdapter.ViewHolder {
 
     val vh = ViewHolder(
             LayoutInflater.from(parent.context).inflate(
