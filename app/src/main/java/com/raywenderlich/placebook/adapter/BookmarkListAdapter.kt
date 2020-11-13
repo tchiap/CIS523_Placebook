@@ -34,6 +34,7 @@ class BookmarkListAdapter(
 
   }
 
+  // 4 - page 388
   override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookmarkListAdapter.ViewHolder {
 
     val vh = ViewHolder(
@@ -44,7 +45,7 @@ class BookmarkListAdapter(
   }
 
 
-
+  // 3 - page 388
   fun setBookmarkData(bookmarks: List<BookmarkView>) {
     this.bookmarkData = bookmarks
     notifyDataSetChanged()

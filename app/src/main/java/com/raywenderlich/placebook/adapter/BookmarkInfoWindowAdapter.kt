@@ -22,6 +22,7 @@ class BookmarkInfoWindowAdapter(val context: Activity) : GoogleMap.InfoWindowAda
     }
 
 
+    // 5 - page 310
     override fun getInfoContents(marker: Marker): View? {
         val titleView = contents.findViewById<TextView>(R.id.title)
         titleView.text = marker.title ?: ""
